@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  filter: drop-shadow(0 0 0.75rem rgb(90, 73, 241));
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bg-image {
+  background-image: url("background.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.circle {
+  width: 300px;
+  height: 300px;
+  border: 5px rgb(255, 255, 255) solid;
+  border-radius: 150px;
+}
+
+.small-circle {
+  width: 30px;
+  height: 30px;
+  background: rgb(255, 255, 255);
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+.hand {
+  height: 10px;
+  background: rgb(255, 255, 255);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: left center;
+  transform: translate(0, -50%);
+}
+
+.hours-hand {
+  width: 80px;
+}
+
+.minutes-hand {
+  width: 100px;
+}
+
+.seconds-hand {
+  width: 140px;
+}
