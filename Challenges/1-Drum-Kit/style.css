@@ -12,18 +12,12 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.container {
-  display: flex;
-  flex-direction: column;
+.contain {
+  width: 80%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  align-items: center;
-}
-.keys {
-  display: flex;
-  justify-content: center;
 }
 
 .key {

@@ -2,6 +2,16 @@ document.addEventListener("keydown", function (e) {
   play(e.code);
 });
 
+const divs = document.querySelectorAll(".key");
+divs.forEach((div) => {
+  div.addEventListener("mousedown", function (e) {
+    play(e.target.id);
+  });
+  div.addEventListener("mouseup", function (e) {
+    release(e.target.id);
+  });
+});
+
 document.addEventListener("keyup", function (e) {
   release(e.code);
 });
