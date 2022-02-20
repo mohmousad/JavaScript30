@@ -4,32 +4,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>3- Playing with CSS Variables and JS</title>
-    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <h1>Update CSS Variables with <span class="JS-span">JS</span></h1>
+  <body class="m-0 p-0">
+    <h3 class="mt-3 text-center">Update CSS Variables with <span class="JS-span">JS</span></h3>
     <div class="workspace">
-      <div class="controllers">
-        <div class="controller spacing">
+      <div class="controllers d-flex flex-wrap justify-content-center align-items-center p-1 m-auto">
+        <div class="d-flex flex-column mx-3 justify-content-center align-items-center">
           <label>Spacing</label>
           <input type="range" id="spacingInput" min="0" max="40" />
         </div>
-        <div class="controller blur">
+        <div class="d-flex flex-column mx-3 justify-content-center align-items-center">
           <label>Blur</label>
           <input type="range" id="blurInput" min="0" max="25" />
         </div>
-        <div class="controller color">
+        <div class="d-flex flex-column mx-3 justify-content-center align-items-center">
           <label>Color</label>
           <input type="color" id="colorInput" />
         </div>
       </div>
-      <div class="img-container">
-        <img src="image.jpg" alt="" />
+      <div class="m-3">
+        <img class="img-fluid" src="image.jpg" alt="" />
       </div>
     </div>
+    <script src="bootstrap.bundle.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
