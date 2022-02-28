@@ -78,3 +78,31 @@ p {
 .panel.open {
   flex: 5;
 }
+
+@media screen and (max-width: 400px) {
+  .panels {
+    flex-direction: column;
+  }
+
+  .panel {
+    width: 100%;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .first-p {
+    transform: translateY(-100%);
+  }
+  .last-p {
+    transform: translateY(100%);
+  }
+
+  .open-active > .first-p {
+    transform: translateY(0);
+  }
+  .open-active > .last-p {
+    transform: translateY(0);
+  }
+}
