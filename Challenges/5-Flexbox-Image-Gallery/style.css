@@ -1,0 +1,80 @@
+html {
+  background: #ffc600;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.panels {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1;
+
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+
+  transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.2s;
+}
+
+.panel1 {
+  background-image: url(./imgs/1.jpg);
+}
+.panel2 {
+  background-image: url(./imgs/2.jpg);
+}
+.panel3 {
+  background-image: url(./imgs/3.jpg);
+}
+.panel4 {
+  background-image: url(./imgs/4.jpg);
+}
+.panel5 {
+  background-image: url(./imgs/5.jpg);
+}
+
+p {
+  border-radius: 10px;
+  color: white;
+  font-size: 30px;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+}
+
+.panel > * {
+  margin: 0;
+  width: 100%;
+  transition: transform 0.5s;
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-p {
+  transform: translateY(-100%);
+}
+.last-p {
+  transform: translateY(100%);
+}
+
+.open-active > .first-p {
+  transform: translateY(0);
+}
+.open-active > .last-p {
+  transform: translateY(0);
+}
+
+.panel.open {
+  flex: 5;
+}
