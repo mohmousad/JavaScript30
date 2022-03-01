@@ -1,0 +1,32 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>8- HTML5 Canvas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="options">
+      <div class="option">
+        <label>Color</label>
+        <input type="color" id="colorInput" value="#ff0000" />
+      </div>
+      <div class="option">
+        <label>Width</label>
+        <input type="range" id="widthInput" min="0" max="100" value="1" />
+      </div>
+      <div class="option">
+        <label> Reainbow Mode</label>
+        <input type="checkbox" id="reainbow" />
+      </div>
+      <div class="option">
+        <button id="clearBtn">Clear</button>
+      </div>
+    </div>
+    <div class="draw-space">
+      <canvas id="draw" width="600" height="400"></canvas>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
